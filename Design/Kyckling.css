@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+
+  padding: 0;
+}
+
+body {
+  background: lightgrey;
+
+  text-align: center;
+}
+
+.bildochmeny {
+  width: 100%;
+}
+
+/*bilden som är högst upp på sidan*/
+
+#food {
+  width: 100%;
+
+  height: auto;
+
+  display: block;
+}
+
+/*utseendet för navigeringsmenyn*/
+
+#meny {
+  list-style-type: none;
+
+  font-family: Courier;
+
+  font-size: 25px;
+
+  color: black;
+
+  background: darkgrey;
+
+  width: 100%;
+}
+
+/*specifierat denna meny med ett id då det finns flera listor på sidan*/
+#meny li {
+  display: inline;
+
+  padding: 40px;
+
+  color: black;
+}
+
+/*Länkarnas färger där alla är svarta(förutom en som blir grå när man håller musen över) oavsett om sidan är besökt eller inte. Gäller rad 38-60*/
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/*allmäna informationen om sidan kyckling*/
+#omkyckling {
+  font-family: courier;
+
+  float: left;
+
+  background-color: white;
+
+  width: 15%;
+
+  margin-left: 2%;
+}
+
+/*Header med texten "recept med kyckling"*/
+
+#header2 {
+  font-family: Courier;
+
+  font-size: 30px;
+
+  background-color: white;
+
+  width: 60%;
+
+  margin: 2% auto 0 auto;
+}
+
+/*sektion där alla recept syns*/
+
+#box1 {
+  background-color: white;
+
+  margin: 2% auto 0 auto;
+  /*placerar boxen centrerat på sidan*/
+  width: 60%;
+  font-family: courier;
+  list-style-position: inside;
+
+  list-style-type: circle;
+
+  padding-top: 1%;
+
+  padding-bottom: 1%;
+
+  margin-bottom: 5%;
+}
+
+/*alla bilder i recept-sektionen*/
+
+.picture {
+  display: inline-block;
+
+  width: auto;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  /*gör så att texten inte flyter över bilden när rutan minimeras, alltså blir den responsiv*/
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*all text i recept-sektionen*/
+
+.text {
+  display: inline-table;
+
+  width: 50%;
+
+  margin-left: 3%;
+  margin-top: 1%;
+
+  vertical-align: top;
+
+  text-align: left;
+
+  font-family: courier;
+
+  font-size: 12px;
+}
+
+footer {
+  background-color: white;
+  margin-bottom: 3%;
+  padding: 1%;
+}
